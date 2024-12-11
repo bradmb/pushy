@@ -1,0 +1,24 @@
+{
+  "name": "pushy",
+  "version": "1.0.0",
+  "description": "GitHub and JIRA integration for managing PRs and deployments",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@octokit/rest": "^21.0.2",
+    "@sagi.io/workers-jwt": "^0.0.26",
+    "marked": "^15.0.3",
+    "rasha": "^1.2.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.22.1"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+name = "pushy"
+main = "src/index.js"
+compatibility_date = "2024-12-10"
+
+# Add KV binding
+kv_namespaces = [
+  { binding = "SUMMARIES_CACHE", id = "4a073f37d4ee492b8969e92d40e69fc5", preview_id = "d2f09701ef234d15bb1007c27ab7150d" }
+]
+
+[vars]
+JIRA_URL = "https://take3tech.atlassian.net"
+TARGET_REPO = "takethree/loanmaps"
+TARGET_BRANCH = "environment/dev"
+DEMO_BRANCH = "environment/demo"
+GITHUB_ACTION_NAME = "Creates A New Release via Webhook Trigger"
+LABEL_TO_IGNORE = "add to demo"
+DEMO_TRIGGER_LABEL = "add to demo"
+AUTHORIZED_USERS = "bbutner@take3tech.com"
+
+# The following secrets should be set via the Cloudflare dashboard:
+# - JIRA_API_KEY
+# - JIRA_USERNAME
+# - GITHUB_APP_ID
+# - GITHUB_PRIVATE_KEY
+# - GITHUB_INSTALLATION_ID 
